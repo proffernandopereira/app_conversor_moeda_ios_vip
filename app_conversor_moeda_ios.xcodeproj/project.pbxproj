@@ -14,6 +14,9 @@
 		8483252D2C90BFFB004B70CF /* app_conversor_moeda_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8483252C2C90BFFB004B70CF /* app_conversor_moeda_iosTests.swift */; };
 		848325372C90BFFB004B70CF /* app_conversor_moeda_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848325362C90BFFB004B70CF /* app_conversor_moeda_iosUITests.swift */; };
 		848325392C90BFFB004B70CF /* app_conversor_moeda_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848325382C90BFFB004B70CF /* app_conversor_moeda_iosUITestsLaunchTests.swift */; };
+		8483254C2C90CB10004B70CF /* CurrencyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8483254B2C90CB10004B70CF /* CurrencyResponse.swift */; };
+		8483254E2C90CB27004B70CF /* CurrencyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8483254D2C90CB27004B70CF /* CurrencyInteractor.swift */; };
+		848325502C90CB41004B70CF /* CurrencyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8483254F2C90CB41004B70CF /* CurrencyPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		848325322C90BFFB004B70CF /* app_conversor_moeda_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = app_conversor_moeda_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		848325362C90BFFB004B70CF /* app_conversor_moeda_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_conversor_moeda_iosUITests.swift; sourceTree = "<group>"; };
 		848325382C90BFFB004B70CF /* app_conversor_moeda_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_conversor_moeda_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8483254B2C90CB10004B70CF /* CurrencyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyResponse.swift; sourceTree = "<group>"; };
+		8483254D2C90CB27004B70CF /* CurrencyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyInteractor.swift; sourceTree = "<group>"; };
+		8483254F2C90CB41004B70CF /* CurrencyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +100,13 @@
 		8483251A2C90BFF8004B70CF /* app_conversor_moeda_ios */ = {
 			isa = PBXGroup;
 			children = (
-				8483251B2C90BFF8004B70CF /* app_conversor_moeda_iosApp.swift */,
-				8483251D2C90BFF8004B70CF /* ContentView.swift */,
 				8483251F2C90BFFA004B70CF /* Assets.xcassets */,
+				8483254A2C90C7E8004B70CF /* App */,
+				848325492C90C7AF004B70CF /* Resources */,
+				848325482C90C793004B70CF /* View */,
+				848325472C90C77F004B70CF /* Presenter */,
+				848325462C90C76F004B70CF /* Interactor */,
+				848325452C90C75D004B70CF /* model */,
 				848325212C90BFFA004B70CF /* Preview Content */,
 			);
 			path = app_conversor_moeda_ios;
@@ -125,6 +135,53 @@
 				848325382C90BFFB004B70CF /* app_conversor_moeda_iosUITestsLaunchTests.swift */,
 			);
 			path = app_conversor_moeda_iosUITests;
+			sourceTree = "<group>";
+		};
+		848325452C90C75D004B70CF /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8483254B2C90CB10004B70CF /* CurrencyResponse.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		848325462C90C76F004B70CF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8483254D2C90CB27004B70CF /* CurrencyInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		848325472C90C77F004B70CF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8483254F2C90CB41004B70CF /* CurrencyPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		848325482C90C793004B70CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8483251D2C90BFF8004B70CF /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		848325492C90C7AF004B70CF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8483254A2C90C7E8004B70CF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8483251B2C90BFF8004B70CF /* app_conversor_moeda_iosApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +314,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848325502C90CB41004B70CF /* CurrencyPresenter.swift in Sources */,
+				8483254C2C90CB10004B70CF /* CurrencyResponse.swift in Sources */,
+				8483254E2C90CB27004B70CF /* CurrencyInteractor.swift in Sources */,
 				8483251E2C90BFF8004B70CF /* ContentView.swift in Sources */,
 				8483251C2C90BFF8004B70CF /* app_conversor_moeda_iosApp.swift in Sources */,
 			);
